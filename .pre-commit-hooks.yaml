@@ -1,0 +1,5 @@
+- id: policy-bot-validate
+  name: Validate policy-bot configuration
+  files: ^\.policy.yml$
+  language: script
+  entry: hook.sh
