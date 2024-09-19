@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -eu
 
 # Parse arguments. We should get two.
 if [ $# -ne 2 ]; then
