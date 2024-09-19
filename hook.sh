@@ -22,7 +22,7 @@ echo "File is" $POLICY_FILE
 
 # Validate.
 tmpfile=$(mktemp /tmp/policy.XXXXXX)
-code=$( \
+rcode=$( \
     curl "${POLICY_BOT_URL}/api/validate" \
     -XPUT \
     -T "${POLICY_FILE}" \
