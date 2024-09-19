@@ -33,7 +33,7 @@ rcode=$( \
 if [[ "${rcode}" -gt 299 ]];
 then
     echo "Validation failed with status code ${rcode}"
-    cat /tmp/response
+    cat "${tmpfile}"
     exit 1
 fi
 
